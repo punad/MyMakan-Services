@@ -1,10 +1,15 @@
 <!-- dbCon.php -->
 <?php 
 function connect($flag=TRUE){
-	$servername = "localhost";
-	$username = "root";
-	$password = "";
-	$dbName = "res_booking";
+	$servername = "remotemysql.com";
+	$username = "hi1dabo0mb";
+	$password = "gXtBPWw0AJ";
+	$dbName = "hi1dabo0mb";
+	
+	//$servername = "localhost";
+	//$username = "root";
+	//$password = "";
+	//$dbName = "res_booking";
 
 	// Create connection
 	if($flag){
