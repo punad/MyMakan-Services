@@ -3,12 +3,10 @@
 	session_start();
    include_once 'dbCon.php';
    $con = connect();  
-	//reject 
+	
 	if (isset($_GET['breject_id'])) {
 		$id =$_GET['breject_id'];
 		$sql ="UPDATE booking_details SET status = 0 WHERE id = '$id';";
-		// include_once 'dbCon.php';
-		// $con = connect();
 		if ($con->query($sql) === TRUE) {
 		echo '<script>alert("Telah dibatalkan.")</script>';
 		echo '<script>window.location="booking-list.php"</script>';
@@ -20,16 +18,13 @@
 	// approve booking request
 	if (isset($_GET['bapprove_id'])) {
 		$id =$_GET['bapprove_id'];
-		// include_once 'dbCon.php';
-		// $con = connect();
+		
 		$sql ="UPDATE booking_details SET status = 1 WHERE id = '$id';";
 		
 		$sql2 ="SELECT `id`, `c_id`, (SELECT `restaurent_name` FROM `restaurant_info` WHERE restaurant_info.id= booking_details.c_id) as username,(SELECT `email` FROM `restaurant_info` WHERE restaurant_info.id= booking_details.c_id) as email FROM booking_details WHERE id = '$id';";
 		$result= $con->query($sql2);
 		foreach ($result as $r ) {
 			$cname = $r['username'];
-			// $email = $r['email'];
-
 			$email = "syazwanyuznann@gmail.com";
 		}
 		if ($con->query($sql) === TRUE) {

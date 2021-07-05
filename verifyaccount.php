@@ -7,9 +7,9 @@ $email = $_GET['email'];
 $auth = $_GET['auth'];
 
 if (isset($_GET['view'])) {
-	# code... 
+	
 	if (isset($_GET['resend'])) {
-		# code...
+		
 		include 'dashboard/mailSender.php'; 
 		$mail->Body = '<html><body>
 			Verify your account.. click the link below.
@@ -19,8 +19,7 @@ if (isset($_GET['view'])) {
 		if($mail->send()) {
 			echo '<script>alert("Email Confirmation is already sent. Please check you email.")</script>';
 			echo '<script>window.location="verifyaccount.php?view=verifyaccount&email='.$email.'&id='.$id.'&auth='.$auth.'"</script>';
-		//   	echo '<script>alert("Restaurant added successfully")</script>';
-		// echo '<script>window.location="login.php"</script>';
+		
 		}else{
 			echo '<script>alert("Email is not valid")</script>';
 			echo '<script>window.location="login.php"</script>';

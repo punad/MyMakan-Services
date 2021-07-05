@@ -13,7 +13,6 @@
 		</script>
 <?php		
 		echo '<script>window.location.href ="view-chair-list.php?table_id=" + dist;</script>';
-		//header("Location: view-chair-list.php?table_id=".$tbl_id."");
 	    } else {
 			echo "Error: " . $sql . "<br>" . $con->error;
 		} 

@@ -9,7 +9,7 @@ if (isset($_POST['find'])) {
   <body>
     
    <?php include 'template/nav-bar.php'; ?>
-    <!-- END nav -->
+    
     
     <section class="home-slider owl-carousel"style="height: 300px;" >
       <div class="slider-item" style="background-image: url('images/nasikerabu.jpg');" data-stellar-background-ratio="0.5">
@@ -68,7 +68,8 @@ if (isset($_POST['find'])) {
                     </div>
                   </div>
                   <?php } ?>
-              </div><!-- END -->
+              </div>
+		
             </div>
           </div>
         </div>

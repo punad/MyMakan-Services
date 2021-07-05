@@ -8,14 +8,14 @@ if (!isset($_SESSION['isLoggedIn'])) {
 	<body>
 		<section class="body">
 
-			<!-- start: header -->
+			
 			<?php include 'template/top-bar.php'; ?>
-			<!-- end: header -->
+		
 
 			<div class="inner-wrapper">
-				<!-- start: sidebar -->
+				
 				<?php include 'template/left-bar.php'; ?>
-				<!-- end: sidebar -->
+				
 
 				<section role="main" class="content-body">
 					<header class="page-header">
@@ -35,10 +35,7 @@ if (!isset($_SESSION['isLoggedIn'])) {
 							<a class="sidebar-right-toggle" data-open="sidebar-right"><i class="fa fa-chevron-left"></i></a>
 						</div>
 					</header>
-
-					<!-- start: page -->
-						
-						
+		
 						<section class="panel">
 							<a href="#exampleModal" class="btn btn-success"  data-toggle="modal" >Tambah Kerusi</a>
 							<header class="panel-heading">
@@ -79,8 +76,6 @@ if (!isset($_SESSION['isLoggedIn'])) {
 							</div>
 						</section>
 						
-						
-					<!-- end: page -->
 				</section>
 			</div>
 

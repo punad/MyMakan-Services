@@ -8,7 +8,6 @@
 		if ($con->query($sql) === TRUE) {
 		echo '<script>alert("DELETED.")</script>'; 
 		echo '<script>window.location ="menu-list.php"</script>';
-		//header("Location: view-chair-list.php?table_id=".$tbl_id."");
 	    } else {
 			echo "Error: " . $sql . "<br>" . $con->error;
 		} 

@@ -52,7 +52,7 @@
                 <div class="fields d-block d-lg-flex">
                   <p style="font-size: 20px;color: #000">Negeri</p>
                   <div class="select-wrap one-half">
-                    <div class="icon"><span <!--class="ion-ios-arrow-down"-->
+                    <div class="icon"> <!-- <span class="ion-ios-arrow-down" -->
 					</span></div>
                     <select name="city" id="" class="form-control" disabled="">
                       <option value="Malaysia">Kedah</option>

@@ -16,7 +16,7 @@ include 'template/header.php'; ?>
   <body>
     
      <?php include 'template/nav-bar.php'; ?>
-    <!-- END nav -->
+   
     
     <section class="home-slider owl-carousel" style="height: 100px;">
       <div class="slider-item" style="background-image: url('images/nasikerabu.jpg');" data-stellar-background-ratio="0.5">
@@ -217,11 +217,11 @@ include 'template/header.php'; ?>
  
 $(document).ready(function(){
   $('input[type="checkbox"]').click(function(){
-      // alert($('.menu:checked').length);
+      
 
      var btnconfirm = document.getElementById("confirm");
      var maxchecked = $('.menu:checked').length;
-     // alert(maxchecked) 
+      
       if (maxchecked > 0 ) {
          btnconfirm.style.display = "block";
       } else {

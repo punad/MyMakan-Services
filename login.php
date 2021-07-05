@@ -3,7 +3,7 @@
   <body>
     
     <?php include 'template/nav-bar.php'; ?>
-    <!-- END nav -->
+
     
     <section class="home-slider owl-carousel" style="height: 300px;">
       <div class="slider-item" style="background-image: url('images/nasikerabu.jpg');" data-stellar-background-ratio="0.5">
@@ -55,7 +55,7 @@
 	                </div>
                   </div>
                 </div>
-              </div><!-- END -->
+              </div>
 
             </div>
           </div>
@@ -105,7 +105,7 @@
 
     $_SESSION['isLoggedIn'] = TRUE;
 
-    // $SQL = "SELECT * FROM restaurant_info WHERE email = '$email' And password = '$password' AND approve_status=1";
+    
 
      $SQL = "SELECT * FROM restaurant_info WHERE email = '$email' And password = '$password'";
 
@@ -125,11 +125,7 @@
     }elseif ($_SESSION['role'] == 2) {
       echo '<script>window.location="index.php"</script>';
     } 
-    // if ($_SESSION['role'] == 1) {
-    //    echo '<script>window.location="dashboard/index.php"</script>';
-    // }elseif ($_SESSION['role'] == 2) {
-    //   echo '<script>window.location="index.php"</script>';
-    // } 
+    
     
   }
 

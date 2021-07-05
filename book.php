@@ -107,13 +107,13 @@ if (isset($_POST['confirm'])) {
 		                				for($i = 0; $i < count($_POST["item"]); $i++){
 				                        $i_id = $_POST['item'][$i];
                                 		$qty = $_POST["qty"][$i];
-                                		//echo $qty;
+                                		
 
 				                        $c = 1;  
 				                        $Itmsql = "SELECT * FROM `menu_item` WHERE id = '$i_id';";
 				                        $Itmresult = $con->query($Itmsql);
 				                        foreach ($Itmresult as $itmr) {
-				                        	//echo $itmr['price'];
+				                        	
 				                        $total_price = $total_price + ($qty * $itmr['price']);
 				                    ?> 
 				                    <tr>

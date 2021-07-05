@@ -8,15 +8,12 @@ if (!isset($_SESSION['isLoggedIn'])) {
 	<body>
 		<section class="body">
 
-			<!-- start: header -->
 			<?php include 'template/top-bar.php'; ?>
-			<!-- end: header -->
-
+	
 			<div class="inner-wrapper">
-				<!-- start: sidebar -->
+				
 				<?php include 'template/left-bar.php'; ?>
-				<!-- end: sidebar -->
-
+			
 				<section role="main" class="content-body">
 					<header class="page-header">
 						<h2> Selamat Datang Ke Halaman Pemilik Restoran </h2>
@@ -35,9 +32,7 @@ if (!isset($_SESSION['isLoggedIn'])) {
 						</div>
 					</header>
 
-					<!-- start: page -->
-						
-						
+
 						<section class="panel">
 							<header class="panel-heading">
 								<div class="panel-actions">
@@ -108,7 +103,7 @@ if (!isset($_SESSION['isLoggedIn'])) {
 						</section>
 						
 						
-					<!-- end: page -->
+
 				</section>
 			</div>
 
@@ -119,7 +114,7 @@ if (!isset($_SESSION['isLoggedIn'])) {
 	         return confirm("Adakah anda mahu mengesahkan status ini?");
 	       }
    		</script>
-<!-- Examples -->
+		
 		<script src="assets/javascripts/tables/examples.datatables.default.js"></script>
 		<script src="assets/javascripts/tables/examples.datatables.row.with.details.js"></script>
 		<script src="assets/javascripts/tables/examples.datatables.tabletools.js"></script>

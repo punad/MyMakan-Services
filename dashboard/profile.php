@@ -9,14 +9,14 @@ if (!isset($_SESSION['isLoggedIn'])) {
 
   <body> 
 
-      <!-- start: header -->
+    
       <?php include 'template/top-bar.php'; ?>
-      <!-- end: header -->
+    
 
       <div class="inner-wrapper">
-        <!-- start: sidebar -->
+   
         <?php include 'template/left-bar.php'; ?>
-        <!-- end: sidebar --> 
+   
         <section role="main" class="content-body">
           <header class="page-header">
             <h2>Kemaskini Profil</h2>
@@ -34,14 +34,10 @@ if (!isset($_SESSION['isLoggedIn'])) {
               <a class="sidebar-right-toggle" data-open="sidebar-right"><i class="fa fa-chevron-left"></i></a>
             </div>
           </header>
-
-          <!-- start: page -->
-            
+   
           <section>
             
                 <?php
-
-                // SELECT `id`, `restaurent_name`, `email`, `phone`, `address`, `location`, `logo`, `password`, `bkashnumber`, `approve_status`, `role` FROM `restaurant_info` WHERE 1
 
                 include 'dbCon.php';
                 $con = connect();
@@ -53,30 +49,29 @@ if (!isset($_SESSION['isLoggedIn'])) {
 
 
                 if (isset($_POST['save'])) {
-                  # code...
+               
                   $sql = "UPDATE `restaurant_info` SET `restaurent_name`='".$_POST['fullname']."',`email`='".$_POST['email']."',`phone`='".$_POST['phone']."',`address`='".$_POST['address']."',`location`='".$_POST['area']."',`password`='".$_POST['password']."' WHERE `id`='$res_id'";
                   $cur = $con->query($sql);
                   if ($cur) {
-                    # code...
-                    echo '<script>alert("Accounts has been updated.")</script>';
+                   
+                    echo '<script>alert("Akaun telah dikemaskini.")</script>';
                     echo '<script>window.location="profile.php"</script>';
                   }
                 }
 
                 if (isset($_POST['savephoto'])) { 
                     $targetDirectory = "user-image/";
-            // get the file name
+          
                     $file_name = $_FILES['image']['name'];
-                    // get the mime type
+                  
                     $file_mime_type = $_FILES['image']['type'];
-                    // get the file size
+                   
                     $file_size = $_FILES['image']['size'];
-                    // get the file in temporary
+                    
                     $file_tmp = $_FILES['image']['tmp_name'];
-                    // get the file extension, pathinfo($variable_name,FLAG)
+                 
                     $extension = pathinfo($file_name,PATHINFO_EXTENSION);
 
-                    //register as customer
                     if ($extension =="jpg" || $extension =="png" || $extension =="jpeg"){
                       move_uploaded_file($file_tmp,$targetDirectory.$file_name);
                         $sql = "UPDATE `restaurant_info` SET `logo`='".$file_name."' WHERE `id`='$res_id'"; 
@@ -123,8 +118,6 @@ if (!isset($_SESSION['isLoggedIn'])) {
              </li>
             
           </ul>   
-  
-          <!-- /.box -->
           </div>
           
         </div> 
@@ -179,7 +172,6 @@ if (!isset($_SESSION['isLoggedIn'])) {
                               foreach ($result as $r) {
 
                                 if ($row['location']==$r['id']) {
-                                  # code...
                                    echo  '<option SELECTED value="'.$r['id'].'">'.$r['location_name'].'</option>';
                                 }else{
                                      echo  '<option value="'.$r['id'].'">'.$r['location_name'].'</option>';
@@ -229,15 +221,15 @@ if (!isset($_SESSION['isLoggedIn'])) {
           </div>  
            </form>  
            
-        </div><!--/col-sm-9-->
-    </div><!--/row--> 
-  </div><!--/contanier--> 
+        </div>
+    </div>
+  </div>
           </section>
                  
            
             
             
-          <!-- end: page -->
+
         </section>
       </div>
 
@@ -286,6 +278,6 @@ if (!isset($_SESSION['isLoggedIn'])) {
                                         name="savephoto" type="submit">Muatnaik Gambar</button>
                                     </div>
                                 </form>
-                            </div><!-- /.modal-content-->
-                        </div><!-- /.modal-dialog -->
-                    </div><!-- /.modal -->  
+                            </div>
+                        </div>
+                    </div>

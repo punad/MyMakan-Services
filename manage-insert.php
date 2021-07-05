@@ -22,17 +22,17 @@ $con = connect();
         }else{
 
 	        	if (isset($_FILES['image'])) {
-				 // files handle
+				 
 				    $targetDirectory = "dashboard/user-image/";
-				    // get the file name
+				    
 				    $file_name = $_FILES['image']['name'];
-				    // get the mime type
+				    
 				    $file_mime_type = $_FILES['image']['type'];
-				    // get the file size
+				    
 				    $file_size = $_FILES['image']['size'];
-				    // get the file in temporary
+				    
 				    $file_tmp = $_FILES['image']['tmp_name'];
-				    // get the file extension, pathinfo($variable_name,FLAG)
+				    
 				    $extension = pathinfo($file_name,PATHINFO_EXTENSION);
 
 				    //register as customer
@@ -71,7 +71,6 @@ $con = connect();
         $fullname = $_POST['fullname'];
         $email = $_POST['email'];
         $phone = $_POST['phone'];
-        // $bkashnumber = $_POST['bkashnumber'];
         $address = $_POST['address'];
         $area = $_POST['area'];
         $password = $_POST['password'];
@@ -87,17 +86,17 @@ $con = connect();
         }else{
 
 	        	if (isset($_FILES['image'])) {
-				 // files handle
+				 
 				    $targetDirectory = "dashboard/user-image/";
-				    // get the file name
+				    
 				    $file_name = $_FILES['image']['name'];
-				    // get the mime type
+				    
 				    $file_mime_type = $_FILES['image']['type'];
-				    // get the file size
+				    
 				    $file_size = $_FILES['image']['size'];
-				    // get the file in temporary
+				    
 				    $file_tmp = $_FILES['image']['tmp_name'];
-				    // get the file extension, pathinfo($variable_name,FLAG)
+				   
 				    $extension = pathinfo($file_name,PATHINFO_EXTENSION);
 
 				    if ($extension =="jpg" || $extension =="png" || $extension =="jpeg"){
@@ -110,30 +109,7 @@ $con = connect();
 			        			echo '<script>alert("Pendafaran restoran anda telah berjaya.")</script>';
 			        				echo '<script>window.location="login.php"</script>';
 
-			        		// $id = $con->insert_id;
-
-
-
-			    //     		include 'dashboard/mailSender.php'; 
-							// $mail->Body = '<html><body>
-					  //                Verify your account.. click the link below.
-					  //                http://localhost/tablereservation/verifyaccount.php?email='.$email.'&id='.$id.'&auth='.$password.'
-					  //               </body></html>'; 
-					  //           $mail->addAddress($email, "Booking Approve");
-					  //           if($mail->send()) {
-					  //           	 echo '<script>alert("Restaurant added successfully")</script>';
-			    //     				echo '<script>window.location="verifyaccount.php?view=verifyaccount&email='.$email.'&id='.$id.'&auth='.$password.'"</script>';
-					  //         //   	echo '<script>alert("Restaurant added successfully")</script>';
-			    //     				// echo '<script>window.location="login.php"</script>';
-					  //           }else{
-					  //             	echo '<script>alert("Restaurant added successfully")</script>';
-			    //     				echo '<script>window.location="login.php"</script>';
-					  //           } 
-
-
-
-
-			        	
+			
 			        	}else {
 			                echo "Error: " . $iquery . "<br>" . $con->error;
 			            }

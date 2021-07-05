@@ -8,14 +8,14 @@ if (!isset($_SESSION['isLoggedIn'])) {
 	<body>
 		<section class="body">
 
-			<!-- start: header -->
+
 			<?php include 'template/top-bar.php'; ?>
 			<!-- end: header -->
 
 			<div class="inner-wrapper">
-				<!-- start: sidebar -->
+	
 				<?php include 'template/left-bar.php'; ?>
-				<!-- end: sidebar -->
+		
 
 				<section role="main" class="content-body">
 					<header class="page-header">
@@ -36,7 +36,7 @@ if (!isset($_SESSION['isLoggedIn'])) {
 						</div>
 					</header>
 
-					<!-- start: page -->
+	
 						
 						
 						<section class="panel">

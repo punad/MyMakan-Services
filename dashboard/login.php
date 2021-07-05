@@ -79,7 +79,7 @@
 							<div class="row">
 								<div class="col-sm-8">
 									<div class="checkbox-custom checkbox-default">
-										<!-- <input id="RememberMe" name="rememberme" type="checkbox"/>
+									<input id="RememberMe" name="rememberme" type="checkbox"/>
 										<label for="RememberMe">Remember Me</label> -->
 									</div>
 								</div>
@@ -98,7 +98,7 @@
 								<a class="btn btn-twitter mb-md ml-xs mr-xs">Connect with <i class="fa fa-twitter"></i></a>
 							</div>
 
-							<!-- <p class="text-center">Don't have an account yet? <a href="pages-signup.html">Sign Up!</a> -->
+							<p class="text-center">Don't have an account yet? <a href="pages-signup.html">Sign Up!</a> -->
 
 						</form>
 					</div>

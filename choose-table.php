@@ -15,7 +15,7 @@ include 'template/header.php'; ?>
   <body style="background-image:url('images/square.png')">
 
    <?php include 'template/nav-bar.php'; ?>
-    <!-- END nav -->
+    
 
     <section class="" 
       <div class="slider-item" style="background-image: url('images/nasikerabu.jpg');" data-stellar-background-ratio="0.5">
@@ -107,7 +107,8 @@ include 'template/header.php'; ?>
                         </p>
                         </div>
                       </div>
-                </div><!-- END -->
+                </div>
+				
               </div>
             </div>
           </div>
@@ -129,29 +130,15 @@ include 'template/header.php'; ?>
 ?>
 
 <script type="text/javascript">
-  // $(".restTable").click(function() {
-  //   // body...
-  //   var id = $(this).data("id");
-  //   var tbl = document.getElementById("restTable"+id);
-  //    var btnmenu = document.getElementById("viewMenu");
-
-  //   // alert(tbl.checked);
-
-  //    if (tbl.checked == true){
-  //        btnmenu.style.display = "block";
-  //     } else {
-  //        btnmenu.style.display = "none";
-  //     }
-
-  // });
+ 
 
   $(document).ready(function(){
   $('input[type="checkbox"]').click(function(){
-      // alert($('.menu:checked').length);
+      
 
      var btnmenu = document.getElementById("viewMenu");
      var maxchecked = $('#chair:checked').length;
-     // alert(maxchecked)
+     
       if (maxchecked > 0 ) {
          btnmenu.style.display = "block";
       } else {

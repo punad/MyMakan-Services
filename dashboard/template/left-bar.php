@@ -15,14 +15,14 @@
 				<ul class="nav nav-main">
 					<li class="nav-active">
 						<a href="index.php">
-							<i class="fa fa-chevron-right" aria-hidden="true"></i>
+							<i class="" aria-hidden="true"></i>
 							<span>Tempahan</span>
 						</a>
 					</li>
 					<?php if((isset($_SESSION['isLoggedIn']) && $_SESSION['role'] == 1)){ ?>
 					<li class="nav-parent">
 						<a>
-							<i class="fa fa-chevron-right" aria-hidden="true"></i>
+							<i class="" aria-hidden="true"></i>
 							<span>Meja</span>
 						</a>
 						<ul class="nav nav-children">
@@ -46,7 +46,7 @@
 					<?php if((isset($_SESSION['isLoggedIn']) && $_SESSION['role'] == 1)){ ?>
 					<li class="nav-parent">
 						<a>
-							<i class="fa fa-chevron-right" aria-hidden="true"></i>
+							<i class="" aria-hidden="true"></i>
 							<span>Menu</span>
 						</a>
 						<ul class="nav nav-children">
