@@ -2,15 +2,15 @@
 <?php 
 function connect($flag=TRUE){
 
-	//$servername = "remotemysql.com";
-	//$username = "hi1dabo0mb";
-	//$password = "gXtBPWw0AJ";
-	//$dbName = "hi1dabo0mb";
+	$servername = "remotemysql.com";
+	$username = "hi1dabo0mb";
+	$password = "gXtBPWw0AJ";
+	$dbName = "hi1dabo0mb";
 	
-	$servername = "localhost";
-	$username = "root";
-	$password = "";
-	$dbName = "res_booking";
+	//$servername = "localhost";
+	//$username = "root";
+	//$password = "";
+	//$dbName = "res_booking";
 	
 
 	if($flag){
